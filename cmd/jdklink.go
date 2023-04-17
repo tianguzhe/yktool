@@ -27,7 +27,7 @@ type Binary struct {
 
 var JdkLinkCmd = &cobra.Command{
 	Use:   "jdklink",
-	Short: "get eslipse openjdk link",
+	Short: "获取 openjdk 下载链接",
 	Args: func(cmd *cobra.Command, args []string) error {
 		return nil
 	},

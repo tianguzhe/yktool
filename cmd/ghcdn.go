@@ -10,7 +10,7 @@ import (
 
 var GhcdnCmd = &cobra.Command{
 	Use:   "ghcdn",
-	Short: "transfrom jsclide link",
+	Short: "github 链接 cdn 加速",
 	Args: func(cmd *cobra.Command, args []string) error {
 		url, err := cmd.Flags().GetString("url")
 		if err != nil {
