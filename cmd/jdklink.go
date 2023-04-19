@@ -37,7 +37,7 @@ var JdkLinkCmd = &cobra.Command{
 		hardware, _ := cmd.Flags().GetString("hardware")
 		version, _ := cmd.Flags().GetString("version")
 
-		var ch = make(chan []byte, 3)
+		var ch = make(chan []byte, 1)
 		var wg sync.WaitGroup
 
 		var jdkVersion = []string{
